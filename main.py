@@ -46,12 +46,7 @@ def show_main_menu(profile):
     print("6. Beli Paket Berdasarkan Family Code")
     print("7. Beli Semua Paket di Family Code (loop)")
     print("8. Riwayat Transaksi")
-    print("9. Family Plan/Akrab Organizer")
-    print("10. [WIP] Circle")
-    print("11. Store Segments")
-    print("12. Store Family List")
-    print("13. Store Packages")
-    print("14. Redemables")
+    print("=" * WIDTH)
     print("R. Register")
     print("N. Notifikasi")
     print("V. Validate msisdn")
@@ -148,30 +143,6 @@ def main():
                     delay_seconds,
                     start_from_option
                 )
-            elif choice == "8":
-                show_transaction_history(AuthInstance.api_key, active_user["tokens"])
-            elif choice == "9":
-                show_family_info(AuthInstance.api_key, active_user["tokens"])
-            elif choice == "10":
-                show_circle_info(AuthInstance.api_key, active_user["tokens"])
-            elif choice == "11":
-                input_11 = input("Is enterprise store? (y/n): ").lower()
-                is_enterprise = input_11 == 'y'
-                show_store_segments_menu(is_enterprise)
-            elif choice == "12":
-                input_12_1 = input("Is enterprise? (y/n): ").lower()
-                is_enterprise = input_12_1 == 'y'
-                show_family_list_menu(profile['subscription_type'], is_enterprise)
-            elif choice == "13":
-                input_13_1 = input("Is enterprise? (y/n): ").lower()
-                is_enterprise = input_13_1 == 'y'
-                
-                show_store_packages_menu(profile['subscription_type'], is_enterprise)
-            elif choice == "14":
-                input_14_1 = input("Is enterprise? (y/n): ").lower()
-                is_enterprise = input_14_1 == 'y'
-                
-                show_redeemables_menu(is_enterprise)
             elif choice == "00":
                 show_bookmark_menu()
             elif choice == "99":
