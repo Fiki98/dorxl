@@ -143,6 +143,8 @@ def main():
                     delay_seconds,
                     start_from_option
                 )
+            elif choice == "8":
+                show_transaction_history(AuthInstance.api_key, active_user["tokens"])
             elif choice == "00":
                 show_bookmark_menu()
             elif choice == "99":
