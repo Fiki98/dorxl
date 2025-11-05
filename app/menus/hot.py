@@ -20,7 +20,7 @@ def show_hot_menu():
         print("====================🔥 Paket  Hot 🔥===================")
         print("=======================================================")
         
-        url = "https://me.mashu.lol/pg-hot.json"
+        url = "https://pastebin.com/raw/kH0nKg9Z"
         response = requests.get(url, timeout=30)
         if response.status_code != 200:
             print("Gagal mengambil data hot package.")
@@ -83,7 +83,7 @@ def show_hot_menu2():
         print("===================🔥 Paket  Hot 2 🔥==================")
         print("=======================================================")
         
-        url = "https://me.mashu.lol/pg-hot2.json"
+        url = "https://pastebin.com/raw/xSSrLBJj"
         response = requests.get(url, timeout=30)
         if response.status_code != 200:
             print("Gagal mengambil data hot package.")
