@@ -8,9 +8,9 @@ from datetime import datetime
 from app.menus.util import clear_screen, pause
 from app.client.engsel import (
     get_balance,
-    get_package,
+    get_tiering_info,
 )
-from app.client.engsel2 import get_tiering_info, validate_msisdn
+from app.client.famplan import validate_msisdn
 from app.menus.payment import show_transaction_history
 from app.service.auth import AuthInstance
 from app.menus.bookmark import show_bookmark_menu
